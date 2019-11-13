@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage1.master.cs" Inherits="Assignment.MasterPage1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .socials {
+            height: 28px;
+        }
+        .auto-style2 {
+            height: 81px;
+            width: 118px;
+        }
+        .auto-style3 {
+            height: 28px;
+            width: 900px;
+        }
+        .auto-style4 {
+            height: 28px;
+            width: 60px;
+        }
+        .auto-style5 {
+            height: 40px;
+            font-family: Garamond
+        }
+        .auto-style7 {
+            width: 1100px;
+        }
+        .form1{
+            font-family: Garamond;
+        }
+
+        .auto-style8 {
+            width: 225px;
+        }
+
+    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table style="margin:0 auto" class="auto-style7"> 
+            <tr style="width: 1100px; height:50px"> 
+                <td class="auto-style4"> 
+                    <img src="images/logoUse.jpg" class="auto-style2" />
+                </td>
+                <td style="font-family: Garamond" class="auto-style8">#1 Life Changing Programme&nbsp; </td>
+                <td style="text-align:right;" class="auto-style3">
+                    <asp:ImageButton ID="Icons" runat="server" Height="29px" ImageUrl="~/Images/facebook.png" Width="29px"/>&nbsp;&nbsp;<asp:ImageButton ID="Insta" runat="server" Height="29px" ImageUrl="~/Images/instagram.png" Width="29px"/>&nbsp;&nbsp;<asp:ImageButton ID="ImageButton3" runat="server" Height="29px" ImageUrl="~/Images/twitter.png" Width="30px" /> 
+                </td>
+
+            </tr>
+            <tr style="width: 1100px;background-color: #f8d9ed">
+                <td colspan="3" class="auto-style5">
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem Text="Home" Value="Home" NavigateURL ="~/Home.aspx" ></asp:MenuItem>
+                            <asp:MenuItem Text="Lifestyle Article" NavigateURL ="~/LifestyleArticle1.aspx" Value="Lifestyle Article"></asp:MenuItem>
+                            <asp:MenuItem Text="About Us" Value="About Us" NavigateURL ="~/AboutUs.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Contact Us" Value="Contact Us" NavigateURL ="~/ContactUs.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Sign In" Value="Sign In" NavigateURL ="~/Login.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Admin" Value="admin" NavigateURL ="~/AdminLogin.aspx"></asp:MenuItem>
+                        </Items>
+                        <StaticMenuItemStyle Font-Size="Large" ForeColor="Black" HorizontalPadding="30px" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr style="width:1100px"> 
+                <td colspan="3"> 
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+
+            <tr style="width: 1100px;">
+                <td colspan="3" class="auto-style6"> </td>
+            </tr>
+            
+
+            <tr style="width:1100px;height:20px;background-color:black;text-align:center;color:white;font-family: Garamond"> 
+                <td colspan="3" class="auto-style1"> 
+                    <br /> 
+                    HealthyLife Company, New York, US <br /> 
+                    +0234567789, inquiries@gmail.com <br /> 
+                    Copyright, 2019
+
+                    <br />
+
+                 </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
